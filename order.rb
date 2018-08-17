@@ -8,7 +8,5 @@ class Order
 
     @cash_on_hand = lines[0][0].strip.gsub("$", "").to_f
     @dishes = lines[1..-1].map { |line| Dish.new(name: line[0], price: line[1].strip.gsub("$", "").to_f) }
-
-
   end
 end
