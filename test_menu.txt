@@ -1,4 +1,4 @@
-$10
-fries,$5.00
-burger,$5.00
+$6.00
 shake,$10.00
+nuggets,$1.00
+burger,$5.00

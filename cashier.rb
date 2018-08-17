@@ -4,7 +4,7 @@ class Cashier
   def self.call(order)
     combinations = []
 
-    (order.cash_on_hand.to_i).times do |t|
+    (order.cash_on_hand.to_i + 1).times do |t|
       order.dishes.repeated_combination(t) do |combination|
         combinations << combination
       end

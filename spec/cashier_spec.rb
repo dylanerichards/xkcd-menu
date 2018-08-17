@@ -9,10 +9,11 @@ describe Cashier do
 
 
       expect(order.map { |combination| combination.flatten.map(&:name) }).to eq [
-        ["shake"],
-        ["fries", "fries"],
-        ["fries", "burger"],
-        ["burger", "burger"],
+        ["nuggets", "burger"],
+        [
+          "nuggets", "nuggets", "nuggets", "nuggets",
+          "nuggets", "nuggets",
+        ]
       ]
     end
 
