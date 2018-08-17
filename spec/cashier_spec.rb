@@ -15,5 +15,9 @@ describe Cashier do
         ["burger", "burger"],
       ]
     end
+
+    it 'raises an error when no combinations are found' do
+      expect(Cashier.(Order.new("./no_matches_test.txt"))).to eq "No combinations found for 11.0"
+    end
   end
 end
