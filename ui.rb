@@ -5,5 +5,6 @@ require_relative "print_combinations"
 include PrintCombinations
 
 order = Order.new("./menu.txt")
+response = Cashier.(order)
 
-result = PrintCombinations.(Cashier.(order))
+PrintCombinations.(response)
